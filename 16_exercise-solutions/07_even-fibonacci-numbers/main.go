@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var sum int
 	for i, j := 0, 1; j < 4000000; i, j = i+j, i {
-		if i%2 == 0 && i < 4000000 {
+		if i%2 == 0 && i <= 4000000 {
 			sum += i
 		}
 	}
